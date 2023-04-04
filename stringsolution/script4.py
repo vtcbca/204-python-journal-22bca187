@@ -38,5 +38,4 @@ while b=="y" or b=="Y":
 
   b=input("Do youy want to continue:(y/Y):")  
 
-
-#solve....case3 and case4      
+ 
