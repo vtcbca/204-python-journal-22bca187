@@ -1,18 +1,18 @@
-#Write a script to create a list with 5 string and count total number of string with even number of length with string using U
-
-def countevenstr(a):
-    c=[]
-    count = 0
-    for b in a:
-            if (len(b) % 2 == 0):
-                c.append(b)
-                count=count +1
+#Write a script to create a list with 5 string and count total number of string with even number of length with string using udf
+def evenstrcount(a):
+    v=[]
+    count=0
+    for i in a:
+        if(len(i)%2==0):
+            v.append(i)
+            count=count+1
     if(count>0):
-        print("Even string is {count}and string:{c}")
+        print(f'Even string number is {count} and string :{v}')
     else:
-        print("Even string is not available")
+        print("Even string  not available.")
+
 a=[]
-for b in range(5):
-    x=input("Enter string:{i+1}:")
-    a.append(x)
-countevenstr(a)    
+for i in range(5):
+    v1=input(f"Enter string:{i+1}:")
+    a.append(v1)    
+evenstrcount(a)    
